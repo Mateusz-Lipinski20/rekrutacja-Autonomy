@@ -83,10 +83,10 @@ Uruchamianie:
 .\zadanie2.exe
 
 Po uruchomieniu w terminalu będziemy mogli wybrać liczbę z danego zakresu. Przykład zabawy z petlą jest poniżej:
-<< Podaj T
->> 38.163
-<< Wartosc spoza zakresu!
-<< Podaj T
->> 26.821
-<< 7.225 11.050
+  << Podaj T
+  >> 38.163
+  << Wartosc spoza zakresu!
+  << Podaj T
+  >> 26.821
+  << 7.225 11.050
 
