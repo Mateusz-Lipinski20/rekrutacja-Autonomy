@@ -61,32 +61,37 @@ Zrekonstruowana trajektoria bolidu po fuzji sensorów (wynik działania programu
 (prawidlowa_pozycja_bolidu.png)
 
 
-Instrukcja kompilacji i uruchomienia (Windows / PowerShell)
+## Instrukcja kompilacji i uruchomienia (Windows / PowerShell)
 
 Upewnij się, że pliki wejściowe (`example_input.txt`, `sensor1.csv`, `sensor2.csv`) znajdują się w tym samym katalogu, co pliki źródłowe (`zad1.cpp`, `zad2.cpp`).
 
-Zadanie 1
+### Zadanie 1
+Program służy do deduplikacji pachołków oraz wyznaczania najkrótszej otoczki wypukłej (Convex Hull).
 
 Kompilacja:
-g++ -o zadanie1 zad1.cpp
-Uruchamianie:
-.\zadanie1.exe
+    g++ -o zadanie1 zad1.cpp
 
-Po uruchomieniu program poprosi o podanie nazwy pliku wejściowego, wiec wpisujemy:
-example_input.txt
+Uruchomienie:
+    .\zadanie1.exe
 
-Zadanie 2
+Po uruchomieniu program poprosi o podanie nazwy pliku wejściowego, więc wpisujemy:
+    example_input.txt
+
+---
+
+### Zadanie 2
+Program przeprowadza fuzję danych telemetrycznych z dwóch sensorów oraz uruchamia interaktywny terminal do odpytywania o pozycję bolidu w czasie $T$.
 
 Kompilacja:
-g++ -o zadanie2 zad2.cpp
-Uruchamianie:
-.\zadanie2.exe
+    g++ -o zadanie2 zad2.cpp
 
-Po uruchomieniu w terminalu będziemy mogli wybrać liczbę z danego zakresu. Przykład zabawy z petlą jest poniżej:
-  << Podaj T
-  >> 38.163
-  << Wartosc spoza zakresu!
-  << Podaj T
-  >> 26.821
-  << 7.225 11.050
+Uruchomienie:
+    .\zadanie2.exe
 
+Przykładowa sesja z terminalem:
+    << Podaj T
+    >> 38.163
+    << Wartosc spoza zakresu!
+    << Podaj T
+    >> 26.821
+    << 7.225 11.050
